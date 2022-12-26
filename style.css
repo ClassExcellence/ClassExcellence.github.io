@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100vw;
+    background: url(./MathBackground.jpg) fixed center/cover;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    overflow: hidden;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.375);
+}
+
+
+header li{
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    position: relative;
+}
+
+
+header li a{
+    margin: 2vh 2vw;
+    color: white;
+    float: right;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    position: relative;
+}
+
+#logo {
+    color: white;
+    float: left;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+header li a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgba(172, 255, 47, 0.802);
+    text-decoration: none;
+    list-style-type: none;
+    float: right;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+
+header li a:hover::after{
+    width: 100%;
+}
+
+
+
+.content{
+    width: 100%;
+    position: center;
+    color: white;
+    text-align: center;
+}
+
+.content h1{
+    top: 20%;
+    font-size: 9vw;
+    bottom: 0;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+table{
+    color: white;
+    position: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 5%;
+  }
+  .timeline__event {
+    position: relative;
+    margin: 10px 1vw;
+  }
+  .timeline__event__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: yellowgreen;
+  }
+  .timeline__event__content {
+    padding: 10px 1vw;
+  }
+  .timeline__event__date {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .service-text {
+    margin: 0 10vw;
+    position: center;
+    color: white;
+    text-align: center;
+  }
